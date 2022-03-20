@@ -12,7 +12,7 @@ export default function Ruutsu(context) {
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:image" content="/static/images/hero.jpg" />
         <meta property="og:title" content={context.meta.title} />
-        <meta name="description" content={context.meta.desc} itemprop="description" />
+        <meta name="description" content={context.meta.desc} itemProp="description" />
         <meta property="og:description" content={context.meta.desc} />
       </Head>
 
