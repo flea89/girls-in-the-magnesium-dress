@@ -8,7 +8,7 @@ import Splash from '../components/splash'
 
 export default function Ruutsu(context) {
   const oneDay = 24 * 60 * 60 * 1000;
-  const ruutsuLaunch = new Date(2022, 4, 24);
+  const ruutsuLaunch = new Date(2022, 3, 24);
   const diffDays = Math.round(Math.abs((ruutsuLaunch - new Date()) / oneDay));
 
   return (
