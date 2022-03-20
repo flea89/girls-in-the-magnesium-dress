@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
-import data from '../content/splash-album.yml'
+import { getPageCopy } from './utils/getPageCopy'
 
 export default function Home(context) {
 
@@ -8,15 +8,18 @@ export default function Home(context) {
     <div className={styles.container}>
       <Head>
         <title>{context.title}</title>
-        <meta name="description" content={context.description} />
+        <meta name="description" content={context.desc} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
 
         <h1 className={styles.title}>
-          {context.title}
+          {context.title} - {context.locale}
         </h1>
+        <p>
+        {context.desc}
+        </p>
 
       </main>
 
@@ -26,9 +29,11 @@ export default function Home(context) {
   )
 }
 
-export async function getStaticProps() {
-
+export async function getStaticProps({locale}) {
   return {
-    props: data
+    props: {
+      locale,
+      ...await getPageCopy('splashAlbum', locale)
+    }
   }
 }
