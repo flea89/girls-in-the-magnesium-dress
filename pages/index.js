@@ -3,46 +3,31 @@ import styles from '../styles/Home.module.scss'
 import { getPageCopy } from '../utils/getPageCopy'
 import Image from 'next/image'
 import profilePic from '../public/copertina.jpg'
+import Countdown from '../components/countdown'
+import Splash from '../components/splash'
 
 export default function Ruutsu(context) {
+  const oneDay = 24 * 60 * 60 * 1000;
+  const ruutsuLaunch = new Date(2022, 4, 24);
+  const diffDays = Math.round(Math.abs((ruutsuLaunch - new Date()) / oneDay));
 
   return (
     <div>
-      <div className={styles.bgWrap}>
-        <Image
-          aria-hidden="true" 
-          alt="cover"
-          src={profilePic}
-          layout="fill"
-          objectFit="contain"
-          quality={100}
-        />
-      </div>
-      <div className={styles.container}>
-        <Head>
-          <title>{context.title}</title>
-          <meta name="description" content={context.desc} />
-          <link rel="icon" href="/favicon.ico" />
-          <meta property="og:image" content="/static/images/hero.jpg" />
-          <meta property="og:title" content={context.meta.title} />
-          <meta name="description" content={context.meta.desc} itemProp="description" />
-          <meta property="og:description" content={context.meta.desc} />
-        </Head>
+      <Head>
+        <title>{context.meta.title}</title>
+        <meta name="description" content={context.desc} />
+        <link rel="icon" href="/favicon.ico" />
+        <meta property="og:image" content="/static/images/hero.jpg" />
+        <meta property="og:title" content={context.meta.title} />
+        <meta name="description" content={context.meta.desc} itemProp="description" />
+        <meta property="og:description" content={context.meta.desc} />
+      </Head>
 
-        <main className={styles.main}>
-
-          <h1 className={styles.title}>
-            {context.title}
-          </h1>
-          <p>
-          {context.desc}
-          </p>
-
-        </main>
-
+        { diffDays < 0 ? 
+          <Splash {...context} /> : <Countdown title={context.title} days={diffDays}></Countdown>
+          }
         <footer className={styles.footer}>
         </footer>
-      </div>
     </div>
   )
 }

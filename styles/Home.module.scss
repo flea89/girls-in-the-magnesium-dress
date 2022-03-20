@@ -34,6 +34,17 @@
   text-align: center;
 }
 
+.countdown {
+  transform: translateY(-50%);
+  
+  .countdown__days {
+    margin-top: 40px;
+  }
+  span {
+    font-size: 64px;
+  }
+}
+
 .footer {
   display: flex;
   flex: 1;
