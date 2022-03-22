@@ -1,6 +1,47 @@
 meta:
   title: Ruutsu - The Girls in the Magnesium Dress
-  desc: Debut album of the Girls and the Magnesium Dress
+  desc: Ruutsu. The debut album of the Girls and the Magnesium Dress
 
 title: Ruutsu
-desc: Debut album of the Girls and the Magnesium Dress
+date_out: Out on April 24th
+
+band: The Girls in the Magnesium Dress
+artist_anna: Anna Astesano
+artist_valentina: Valentina Ciardelli
+debut: The debut album of
+stream_title: Stream on
+streaming_services:
+  - logo: youtube
+    text: Youtube Music 
+    link: link.me
+  - logo: apple
+    text: Apple Music 
+    link: link.me
+  - logo: spotify
+    text: Spotify
+    link: link.me
+buy_title: Buy on
+buy_services:
+  - logo: amazon
+    text: Amazon
+    link: link.me
+  - logo: amazon
+    text: Da Vinci 
+    link: link.me
+find_us: Find us here
+social:
+  - logo: facebook
+    text: Facebook
+    link: link.me
+  - logo: instagram
+    text: Instagram
+    link: link.me
+  - logo: youtube
+    text: Youtube
+    link: link.me
+  - text: Website
+    link: link.me
+
+website:
+  text: website
+  link: link.me

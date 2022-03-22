@@ -9,6 +9,9 @@ export default function CountDown(props) {
           <h1 className={styles.title}>
             {props.title}
           </h1>
+          <p>
+            {props.desc}
+          </p>
 
           <div className={styles.countdown__days}>
             <span>

@@ -23,8 +23,8 @@ export default function Ruutsu(context) {
         <meta property="og:description" content={context.meta.desc} />
       </Head>
 
-        { diffDays < 0 ? 
-          <Splash {...context} /> : <Countdown title={context.title} days={diffDays}></Countdown>
+        { diffDays > 0 ? 
+          <Splash {...context} /> : <Countdown days={diffDays} {...context}></Countdown>
           }
         <footer className={styles.footer}>
         </footer>
