@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html>
       <Head>
+        <meta name="robots" content="noindex" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.thegirlsinthemagnesiumdress.com" />
         <meta property="og:site_name" content="The girls in the magnesium dress" />
