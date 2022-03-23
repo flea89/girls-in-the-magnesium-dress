@@ -32,7 +32,8 @@ export default function Splash(props) {
               alt="cover"
               src={profilePic}
               layout='responsive'
-              quality={100}
+              sizes="(min-width: 1024px) 700px, 100vw"
+                quality={100}
             />
           </div>
           <div className={styles.section}>
