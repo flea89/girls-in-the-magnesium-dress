@@ -20,16 +20,18 @@ export default function Splash(props) {
           }`}
         </script>
       </Head>
+
       <main className={styles.main}>
         <div className={styles.container}>
-          <h2>
+          <h3 className={[styles.section, styles['show--else']].join(' ')}>
             {props.date_out}
-          </h2>
+          </h3>
           <div className={styles.bgWrap}>
             <Image
               aria-hidden="true" 
               alt="cover"
               src={profilePic}
+              layout='responsive'
               quality={100}
             />
           </div>
@@ -37,7 +39,7 @@ export default function Splash(props) {
             <h1 className={styles.title}>
               {props.album_title}
             </h1>
-            <p>
+            <p className={styles.debut}>
               {props.debut}
             </p>
             <h2 className={styles.band}>
@@ -52,7 +54,7 @@ export default function Splash(props) {
               </h3>
             </div>
           </div>
-          <div className={[styles.section, styles['stream-buy-section'] ].join(' ')}>
+          <div className={[styles.section, styles['stream-buy-section'],  styles['show--else'] ].join(' ')}>
             <div className={styles['service-list']}>
                 <div>
                   {props.stream_title}
@@ -84,7 +86,7 @@ export default function Splash(props) {
                 </ul>
             </div>
           </div>
-        <footer className={styles.section}>
+        <footer className={[styles.section, styles['show--else']].join(' ')}>
           <div className={styles.social}>
             <p>
               {props.find_us}

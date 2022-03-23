@@ -1,32 +1,58 @@
 @import './variables';
 
+$animation-cover-delay: 0.1s;
+$animation-cover-duration: 2.5s;
+
+$animation-title-delay: $animation-cover-delay + $animation-cover-duration - 1s;
+$animation-title-duration: $animation-cover-duration / 2;
+
+$animation-debut-delay: $animation-title-delay + $animation-title-duration;
+$animation-debut-duration: $animation-cover-duration / 2;
+
+$animation-band-delay: $animation-debut-delay + .5s;
+$animation-band-duration: $animation-cover-duration / 2;
+
+$animation-artist-delay: $animation-band-delay + $animation-band-duration /  2;
+$animation-artist-duration: $animation-cover-duration / 2;
+
+$animation-else-delay: $animation-band-delay + $animation-band-duration + .5;
+$animation-else-duration: $animation-cover-duration * 2/3;
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
 .container {
   padding: 0 2rem;
   color: white;
   position: relative;
-
-
-  @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
 }
 
 .bgWrap {
   width: 100%;
+  opacity: 0;
   display: block;
-  animation: fadeIn 5s;
+  animation: fadeIn forwards $animation-cover-duration ease-in;
+  animation-delay: $animation-cover-delay;
   max-width: 800px;
   position: relative;
   
   @media (min-width: $breakpoint-desktop) { 
-    height: 50vh;
+    width: 700px;
   }
 
 }
 
 .section {
   margin-bottom: 3rem;
+}
+
+ 
+.show--else {
+  opacity: 0;
+  animation: fadeIn forwards $animation-else-duration ease-in;
+  animation-delay: $animation-else-delay;
 }
 
 
@@ -53,6 +79,9 @@
 
 .title {
   margin-bottom: 3rem;
+  opacity: 0;
+  animation: fadeIn forwards $animation-title-duration ease-in;
+  animation-delay: $animation-title-delay;
 
   &::before {
     content:'['
@@ -62,11 +91,24 @@
   }
 }
 
+.debut {
+  opacity: 0;
+  animation: fadeIn forwards $animation-debut-duration ease-in;
+  animation-delay: $animation-debut-delay;
+}
+
 .band {
+  opacity: 0;
   margin-bottom: 0.5rem;
+  animation: fadeIn forwards $animation-band-duration ease-in;
+  animation-delay: $animation-band-delay;
 }
 
 .artists {
+  opacity: 0;
+  animation: fadeIn forwards $animation-artist-duration ease-in;
+  animation-delay: $animation-artist-delay;
+  
   .artist {
     display: inline-block;
     font-size: 1rem;
