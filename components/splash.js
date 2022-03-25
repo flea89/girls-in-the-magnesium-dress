@@ -3,6 +3,7 @@ import Image from 'next/image'
 import profilePic from '../public/copertina.jpg'
 import Head from 'next/head'
 import React from 'react'
+import classnames from 'classnames'
 
 export default function Splash(props) {
   return (
@@ -23,9 +24,11 @@ export default function Splash(props) {
 
       <main className={styles.main}>
         <div className={styles.container}>
-          <h3 className={[styles.section, styles['show--else']].join(' ')}>
-            {props.date_out}
-          </h3>
+          <section className={classnames(styles.section, styles['show--else'])}>
+            <h3 className={classnames('h6')}>
+              {props.date_out}
+            </h3>
+          </section>
           <div className={styles.bgWrap}>
             <Image
               aria-hidden="true" 
@@ -37,25 +40,25 @@ export default function Splash(props) {
             />
           </div>
           <div className={styles.section}>
-            <h1 className={styles.title}>
+            <h1 className={classnames(styles.title, 'h4')}>
               {props.album_title}
             </h1>
             <p className={styles.debut}>
               {props.debut}
             </p>
-            <h2 className={styles.band}>
+            <h2 className={classnames(styles.band, 'h6')}>
               {props.band}
             </h2>
             <div className={styles.artists}>
-              <h3 className={styles.artist}>
+              <h3 className={classnames(styles.artist, 'body-size')}>
                 {props.artist_anna}
               </h3> -
-              <h3 className={styles.artist}>
+              <h3 className={classnames(styles.artist, 'body-size')}>
                 {props.artist_valentina}
               </h3>
             </div>
           </div>
-          <div className={[styles.section, styles['stream-buy-section'],  styles['show--else'] ].join(' ')}>
+          <div className={classnames(styles.section, styles['stream-buy-section'],  styles['show--else'])}>
             <div className={styles['service-list']}>
                 <div>
                   {props.stream_title}
@@ -87,7 +90,7 @@ export default function Splash(props) {
                 </ul>
             </div>
           </div>
-        <footer className={[styles.section, styles['show--else']].join(' ')}>
+        <footer className={classnames(styles.section, styles['show--else'])}>
           <div className={styles.social}>
             <p>
               {props.find_us}

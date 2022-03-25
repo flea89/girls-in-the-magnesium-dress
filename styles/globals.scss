@@ -1,4 +1,6 @@
+@import "sass-rem";
 @import './variables';
+
 
 html,
 body {
@@ -7,6 +9,7 @@ body {
   margin: 0;
   color: $font-color;
   font-family: 'Questrial', sans-serif;
+  font-size: rem($font-size);
 }
 
 a {
@@ -16,4 +19,28 @@ a {
 
 * {
   box-sizing: border-box;
+} 
+
+
+h1, .h1 {
+  font-size: rem(96px);
+}
+h2, .h2 {
+  font-size: rem(60px);
+}
+h3, .h3 {
+  font-size: rem(48px);
+}
+h4, .h4 {
+  font-size: rem(34px);
+}
+h5, .h5 {
+  font-size: rem(24px);
+}
+h6, .h6 {
+  font-size: rem(20px);
+}
+
+.body-size {
+  font-size: rem($font-size);
 }
