@@ -1,21 +1,21 @@
 @import './variables';
 
-$animation-cover-delay: 0.1s;
-$animation-cover-duration: 2.5s;
+$animation-cover-delay: 0.05s;
+$animation-cover-duration: 2.2s;
 
-$animation-title-delay: $animation-cover-delay + $animation-cover-duration - 1s;
-$animation-title-duration: $animation-cover-duration / 2;
+$animation-title-delay: 0 ;
+$animation-title-duration: $animation-cover-duration;
 
-$animation-debut-delay: $animation-title-delay + $animation-title-duration;
+$animation-debut-delay: $animation-title-delay + $animation-title-duration - 0.2s;
 $animation-debut-duration: $animation-cover-duration / 2;
 
-$animation-band-delay: $animation-debut-delay + .5s;
+$animation-band-delay: $animation-debut-delay + .3s;
 $animation-band-duration: $animation-cover-duration / 2;
 
 $animation-artist-delay: $animation-band-delay + $animation-band-duration /  2;
 $animation-artist-duration: $animation-cover-duration / 2;
 
-$animation-else-delay: $animation-band-delay + $animation-band-duration + .5;
+$animation-else-delay: $animation-band-delay + $animation-band-duration + .3;
 $animation-else-duration: $animation-cover-duration * 2/3;
 
 @keyframes fadeIn {
