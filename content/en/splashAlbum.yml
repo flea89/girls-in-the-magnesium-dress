@@ -32,16 +32,17 @@ find_us: Find us here
 social:
   - logo: facebook
     text: Facebook
-    link: link.me
+    link: https://www.facebook.com/GirlsInTheMagnesiumDress/
   - logo: instagram
     text: Instagram
-    link: link.me
+    link: https://www.instagram.com/thegirlsinthemagnesiumdress/
   - logo: youtube
     text: Youtube
-    link: link.me
+    link: https://www.youtube.com/playlist?list=PLZDxIsbPJNVPfeRVcQhYoVAusqxXCtt-9
   - text: Website
-    link: link.me
+    link: https://www.thegirlsinthemagnesiumdress.com/
 
 website:
   text: website
-  link: link.me
+  link: https://www.thegirlsinthemagnesiumdress.com/
+
