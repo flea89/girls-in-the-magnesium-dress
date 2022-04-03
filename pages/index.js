@@ -19,7 +19,6 @@ export default function Ruutsu(context) {
         <meta property="og:description" content={context.meta.desc} />
       </Head>
 
-        
       <Splash {...context} />
       <footer className={styles.footer}>
       </footer>

@@ -40,7 +40,12 @@ $animation-else-duration: $animation-cover-duration * 2/3;
   
   @media (min-width: $breakpoint-desktop) { 
     width: 700px;
+    
+    @media (max-height: 770px) { 
+      width: 550px;
+    }
   }
+
 
 }
 
@@ -77,11 +82,15 @@ $animation-else-duration: $animation-cover-duration * 2/3;
   }
 }
 
-.title {
-  margin-bottom: 3rem;
-  opacity: 0;
+.title-wrp {
   animation: fadeIn forwards $animation-title-duration ease-in;
   animation-delay: $animation-title-delay;
+  opacity: 0;
+  margin-bottom: 3rem;
+}
+
+.title {
+  margin-bottom: 1rem;
 
   &::before {
     content:'['
@@ -89,6 +98,10 @@ $animation-else-duration: $animation-cover-duration * 2/3;
   &::after {
     content:']'
   }
+}
+
+.title_trans {
+
 }
 
 .debut {

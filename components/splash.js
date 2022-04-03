@@ -40,9 +40,12 @@ export default function Splash(props) {
             />
           </div>
           <div className={styles.section}>
-            <h1 className={classnames(styles.title, 'h4')}>
-              {props.album_title}
-            </h1>
+            <div className={classnames(styles['title-wrp'])}>
+              <h1 className={classnames(styles.title, 'h4')}>
+                {props.album_title}
+              </h1>
+              <p className={classnames(styles['title_trans'], 'small')}> {props.album_title_trans} </p>
+            </div>
             <p className={styles.debut}>
               {props.debut}
             </p>
