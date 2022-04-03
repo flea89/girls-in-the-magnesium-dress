@@ -1,6 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+### Ruutsu - Splash Page
+This is the splash page for The Girls in the Magnesium dress debut album.
+
+### Update content
+The site supports multiple languages. "en", "de", "fr", "it" locales are supported. 
+Every locale has it's own folder in [/content](./content/) folder.
+
+## Process
+1. Update the strings on the `.yml` files.
+2. Commit to a new branch and create a Pull Request
+3. In the PR page you will get a preview link to QA your changes
+4. Merge the PR
+
+## Stack
+
+This is a [Next.js](https://nextjs.org/) app
+
+### Getting Started
 
 First, run the development server:
 
@@ -18,7 +34,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+### Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
@@ -27,8 +43,6 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+### Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The website is deployed to Vercel. [http://ruutsu.thegirlsinthemagnesiumdress.com/](http://ruutsu.thegirlsinthemagnesiumdress.com)
