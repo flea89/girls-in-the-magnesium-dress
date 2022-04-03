@@ -2,12 +2,12 @@
 ### Ruutsu - Splash Page
 This is the splash page for The Girls in the Magnesium dress debut album.
 
-### Update content
+## Update content
 The site supports multiple languages. "en", "de", "fr", "it" locales are supported. 
 Every locale has it's own folder in [/content](./content/) folder.
 
-## Process
-1. Update the strings on the `.yml` files.
+### Process
+1. Update the strings on the `.yml` files in the [/content](./content/).
 2. Commit to a new branch and create a Pull Request
 3. In the PR page you will get a preview link to QA your changes
 4. Merge the PR
