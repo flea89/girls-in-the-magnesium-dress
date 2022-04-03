@@ -14,7 +14,7 @@ stream_title: Stream on
 streaming_services:
   - logo: youtube
     text: Youtube Music 
-    link: link.me
+    link: https://www.youtube.com/c/DaVinciPublishing/playlists
   - logo: apple
     text: Apple Music 
     link: link.me
@@ -28,7 +28,10 @@ buy_services:
     link: link.me
   - logo: amazon
     text: Da Vinci 
-    link: link.me
+    link: https://davinci-edition.com/labels/da-vinci-classics/
+  - logo: amazon
+    text: The Girls in the Magnesium Dress online shop 
+    link: https://www.valentinaciardelli.com/store-2/music
 find_us: Find us here
 social:
   - logo: facebook
