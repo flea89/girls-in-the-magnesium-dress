@@ -66,7 +66,7 @@ export default function Splash(props) {
                 <ul>
                   {props.streaming_services.map((service) => (
                     <li key={service.logo}>
-                      <a href={service.link}>
+                      <a target="_blank" rel="noreferrer" href={service.link}>
                         <img className={styles['service-list__icon']} src={`${service.logo}.svg`} alt={service.text}/>
                       </a>
                     </li>
@@ -81,7 +81,7 @@ export default function Splash(props) {
                 <ul>
                   {props.buy_services.map((service) => (
                     <li key={service.logo}>
-                      <a href={service.link}>
+                      <a target="_blank" rel="noreferrer" href={service.link}>
                         <img className={styles['service-list__icon']} src={`${service.logo}.svg`} alt={service.text}/>
                       </a>
                     </li>
