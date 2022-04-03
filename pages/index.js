@@ -7,10 +7,6 @@ import Countdown from '../components/countdown'
 import Splash from '../components/splash'
 
 export default function Ruutsu(context) {
-  const oneDay = 24 * 60 * 60 * 1000;
-  const ruutsuLaunch = new Date(2022, 3, 24);
-  const diffDays = Math.round(Math.abs((ruutsuLaunch - new Date()) / oneDay));
-
   return (
     <div>
       <Head>
@@ -23,11 +19,10 @@ export default function Ruutsu(context) {
         <meta property="og:description" content={context.meta.desc} />
       </Head>
 
-        { diffDays > 0 ? 
-          <Splash {...context} /> : <Countdown days={diffDays} {...context}></Countdown>
-          }
-        <footer className={styles.footer}>
-        </footer>
+        
+      <Splash {...context} />
+      <footer className={styles.footer}>
+      </footer>
     </div>
   )
 }
