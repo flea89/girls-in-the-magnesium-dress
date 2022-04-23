@@ -12,15 +12,16 @@ artist_valentina: Valentina Ciardelli
 debut: The debut album of
 stream_title: Stream on
 streaming_services:
-  - logo: youtube
-    text: Youtube Music 
-    link: https://www.youtube.com/c/DaVinciPublishing/playlists
-  - logo: apple
-    text: Apple Music 
-    link: link.me
   - logo: spotify
     text: Spotify
-    link: link.me
+    link: https://open.spotify.com/album/52eMDHBiMXtZGUhBWR37kW?si=cF38Kp-QR62i5Xw1RLdn3g&utm_source=copy-link
+  - logo: apple
+    text: Apple Music 
+    link: https://music.apple.com/us/album/ruutsu-the-girls-in-the-magnesium-dress/1616814608
+  - logo: youtube
+    text: Youtube Music 
+    link: https://youtube.com/playlist?list=OLAK5uy_l8eiR9oQ2_G2FeQD1e4UWeG7WUHPptHeA
+
 buy_title: Buy on
 buy_services:
   - logo: amazon
@@ -28,7 +29,7 @@ buy_services:
     link: link.me
   - logo: davinci
     text: Da Vinci 
-    link: https://davinci-edition.com/labels/da-vinci-classics/
+    link: https://davinci-edition.com/product/c00553/
   - logo: girlshop
     text: The Girls in the Magnesium Dress online shop 
     link: https://www.valentinaciardelli.com/store-2/music
