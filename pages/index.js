@@ -9,12 +9,17 @@ export default function Ruutsu(context) {
     <div>
       <Head>
         <title>{context.meta.title}</title>
-        <meta name="description" content={context.desc} />
+        <meta name="description" content={context.meta.desc}/>
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:image" content={profilePic.src} />
         <meta property="og:title" content={context.meta.title} />
         <meta name="description" content={context.meta.desc} itemProp="description" />
         <meta property="og:description" content={context.meta.desc} />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={context.meta.title} />
+        <meta name="twitter:description" content={context.meta.desc} />
+        <meta name="twitter:image" content={profilePic.src} />
       </Head>
 
       <Splash {...context} />
