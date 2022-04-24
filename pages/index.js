@@ -11,7 +11,7 @@ export default function Ruutsu(context) {
         <title>{context.meta.title}</title>
         <meta name="description" content={context.meta.desc}/>
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:image" content={profilePic.src} />
+        <meta property="og:image" content={`${context.meta.site}${profilePic.src}`} />
         <meta property="og:title" content={context.meta.title} />
         <meta name="description" content={context.meta.desc} itemProp="description" />
         <meta property="og:description" content={context.meta.desc} />
@@ -19,7 +19,7 @@ export default function Ruutsu(context) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={context.meta.title} />
         <meta name="twitter:description" content={context.meta.desc} />
-        <meta name="twitter:image" content={profilePic.src} />
+        <meta name="twitter:image" content={`${context.meta.site}${profilePic.src}`} />
       </Head>
 
       <Splash {...context} />
