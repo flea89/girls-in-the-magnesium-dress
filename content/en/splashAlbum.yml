@@ -1,7 +1,7 @@
 meta:
   title: Ruutsu - The Girls in the Magnesium Dress
   desc: Ruutsu. The debut album of the Girls and the Magnesium Dress
-  site: https://www.thegirlsinthemagnesiumdress.com
+  site: https://ruutsu.thegirlsinthemagnesiumdress.com
 
 album_title: Ruutsu
 album_title_trans: Roots
@@ -17,22 +17,22 @@ streaming_services:
     text: Spotify
     link: https://open.spotify.com/album/52eMDHBiMXtZGUhBWR37kW?si=cF38Kp-QR62i5Xw1RLdn3g&utm_source=copy-link
   - logo: apple
-    text: Apple Music 
+    text: Apple Music
     link: https://music.apple.com/us/album/ruutsu-the-girls-in-the-magnesium-dress/1616814608
   - logo: youtube
-    text: Youtube Music 
+    text: Youtube Music
     link: https://youtube.com/playlist?list=OLAK5uy_l8eiR9oQ2_G2FeQD1e4UWeG7WUHPptHeA
 
 buy_title: Buy on
 buy_services:
   - logo: davinci
-    text: Da Vinci 
+    text: Da Vinci
     link: https://davinci-edition.com/product/c00553/
   - logo: amazon
     text: Amazon
     link: https://www.amazon.it/dp/B09TX5W78R?ref_=cm_sw_r_cp_ud_dp_WF8W4HQJSE1NA5ZWVW03
   - logo: girlshop
-    text: The Girls in the Magnesium Dress online shop 
+    text: The Girls in the Magnesium Dress online shop
     link: https://www.valentinaciardelli.com/store-2/music
 find_us: Find us here
 social:
@@ -53,4 +53,3 @@ social:
 website:
   text: website
   link: https://www.thegirlsinthemagnesiumdress.com/
-
