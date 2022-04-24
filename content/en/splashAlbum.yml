@@ -24,12 +24,12 @@ streaming_services:
 
 buy_title: Buy on
 buy_services:
-  - logo: amazon
-    text: Amazon
-    link: link.me
   - logo: davinci
     text: Da Vinci 
     link: https://davinci-edition.com/product/c00553/
+  - logo: amazon
+    text: Amazon
+    link: https://www.amazon.it/Ruutsu-Valentina-Ciardelli-Anna-Astesano/dp/B09TX5W78R/ref=sr_1_2?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=26XACCOYZ5KZ6&keywords=Ciardelli&qid=1650791035&s=music&sprefix=ciardelli%2Cpopular%2C298&sr=1-2
   - logo: girlshop
     text: The Girls in the Magnesium Dress online shop 
     link: https://www.valentinaciardelli.com/store-2/music
