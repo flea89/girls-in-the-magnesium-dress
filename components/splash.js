@@ -34,6 +34,7 @@ export default function Splash(props) {
               aria-hidden="true" 
               alt="cover"
               src={profilePic}
+              priority={true}
               layout='responsive'
               sizes="(min-width: 1024px) 700px, 100vw"
                 quality={100}
